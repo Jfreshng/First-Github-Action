@@ -1,0 +1,12 @@
+# first step in creating a workflow is creating a name
+# name - name of workflow, on - event handler, jobs - what should be done when the workfow is triggered. Job definition also stands alone
+name: First Workflow
+on: workflow_dispatch
+jobs: 
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "hello world"
+      - name: Print Goodbye
+        run: echo "Done -bye"
